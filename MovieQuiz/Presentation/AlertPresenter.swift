@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-class AlertPresenter {
+final class AlertPresenter {
     weak var viewController: UIViewController?
     
     func show(quiz result: AlertModel) {
