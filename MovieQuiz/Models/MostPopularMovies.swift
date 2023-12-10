@@ -2,7 +2,7 @@
 //  MostPopularMovies.swift
 //  MovieQuiz
 //
-//  Created by Nikolay Krivtsov on 09.12.2023.
+//  Created by Nikolay Krivtsov on 10.12.2023.
 //
 
 import Foundation
