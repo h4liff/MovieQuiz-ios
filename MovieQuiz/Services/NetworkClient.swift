@@ -1,13 +1,5 @@
-//
-//  NetworkClient.swift
-//  MovieQuiz
-//
-//  Created by Nikolay Krivtsov on 10.12.2023.
-//
-
 import Foundation
 
-/// Отвечает за загрузку данных по URL
 struct NetworkClient {
 
     private enum NetworkError: Error {
