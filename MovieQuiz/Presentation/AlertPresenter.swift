@@ -14,7 +14,13 @@ final class AlertPresenter {
             result.completion()
         }
         
+        alert.view.accessibilityIdentifier = "Alert"
         alert.addAction(action)
+        viewController?.present(alert, animated: true, completion: nil)
+    }
+    func errorAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: nil))
         viewController?.present(alert, animated: true, completion: nil)
     }
 }
