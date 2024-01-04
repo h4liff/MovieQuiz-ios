@@ -105,16 +105,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-GB-Ctd">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
+                            <constraint firstItem="u1B-GB-Ctd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6r9-j9-D3p"/>
                             <constraint firstItem="n0D-JT-9r0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9fN-3C-dCS"/>
                             <constraint firstItem="n0D-JT-9r0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Q9Z-Kj-CzX"/>
+                            <constraint firstItem="u1B-GB-Ctd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lah-t6-QHD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n0D-JT-9r0" secondAttribute="bottom" id="wYH-fD-FRF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n0D-JT-9r0" secondAttribute="trailing" constant="20" id="yQv-kC-CvH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="u1B-GB-Ctd" id="hgW-2M-wd7"/>
                         <outlet property="counterLabel" destination="Ef0-SO-tp7" id="tBZ-Wu-rXZ"/>
                         <outlet property="imageView" destination="1kX-ar-fCb" id="Wks-QN-C29"/>
                         <outlet property="noButton" destination="Vnb-Ru-STi" id="zfz-ew-kzd"/>
