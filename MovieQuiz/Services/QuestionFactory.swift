@@ -26,6 +26,7 @@ final class QuestionFactory: QuestionFactoryProtocol {
             }
         }
     }
+
     
     func requestNextQuestion() {
         DispatchQueue.global().async { [weak self] in

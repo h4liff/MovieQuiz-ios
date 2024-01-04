@@ -6,6 +6,7 @@ protocol NetworkRouting {
 
 struct NetworkClient: NetworkRouting {
 
+
     private enum NetworkError: Error {
         case codeError
     }
